@@ -78,4 +78,5 @@ function restart() {
   startGame();
   let gameOverLayer = document.getElementById("gameOver");
   gameOverLayer.style.display = "none";
+  game.moves = 0;
 }
