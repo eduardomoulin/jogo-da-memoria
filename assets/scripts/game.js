@@ -3,6 +3,7 @@ let game = {
   lockMode: false,
   firstCard: null,
   secondCard: null,
+  moves: 0,
 
   techs: [
     "bootstrap",
@@ -40,6 +41,11 @@ let game = {
     if (!this.firstCard || !this.secondCard) {
       return false;
     }
+    this.moves++;
+    console.log(this.moves);
+    document.getElementById(
+      "res"
+    ).innerHTML = `Voce precisou de ${this.moves} jogadas para ganhar!`;
     return this.firstCard.icon === this.secondCard.icon;
   },
 
