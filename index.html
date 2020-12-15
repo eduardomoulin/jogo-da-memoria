@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Jogo da memória</title>
+</head>
+<body>
+
+    <!-- classes front e back porque queremos que nosso card tenha 2 faces, e que a face de tras seja mostrada quando clicamos no nosso card -->
+
+    <!-- Em cada carta pai (carta container) da imagem, vamos colocar um data-icon e a imagem do que está na carta, para podermos comparar um carta com a outra e ver se o player acertou  -->
+
+    <!-- cada carta tbm terá um ID para diferencia-las, a imagem vai ser igual porem temos que saber se são cartas diferentes e é isso q o ID vai mostrar para nós. -->
+
+    <!-- os cards serão criados por meio do JS -->
+
+    <!-- Serão 20 cartas pois são 10 imagens -->
+
+    <div id="gameBoard">
+
+    <!-- <div id="asdadsasda" class="card" data-icon="bootstrap">
+        <div class="card_front"> 
+            <img class="icon" src="./assets/images/bootstrap.png" alt="">
+        </div>
+
+        <div class="card_back">
+            &lt/&gt  para colocar o </> sem que o html ache que é uma tag -->
+        <!-- </div> -->
+    <!-- </div> --> 
+
+
+    </div>
+
+</div>
+
+    <div id="gameOver">
+        <div>
+            Parabéns, voce completou o jogo!
+        </div>
+
+        <button id="restart" onclick="restart()">Jogue novamente</button>
+    </div>
+
+
+    <script src="./assets/scripts/game.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
